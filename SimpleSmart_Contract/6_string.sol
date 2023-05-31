@@ -3,6 +3,7 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 contract useString {
+    string public name = "nil";
     string public str = "kuchbhi"; // state var
 
     function localstring() public pure returns (string memory) {
@@ -13,7 +14,12 @@ contract useString {
         // calldata-  data will not change again if we uses calldata
         // memory keyword consume High gas as compare to calldata keywords
 
-        string memory name = "asfjhsjd";
-        return name;
+        string memory nam = "asfjhsjd";
+        return nam;
+    }
+
+    // during the param in function memoory and calldata keyword are required
+    function changename(string memory _name) public {
+        name = _name;
     }
 }
