@@ -11,6 +11,8 @@ contract statevar {
     // we always try to use minimum statevariable -- because these state var puts on blockchain
     uint public salary;
 
+
+// contrucotr is special type of function- runs always deployment time / one time function
     constructor() {
         salary = 1000; // intialize state var with constructor
     }
