@@ -20,6 +20,20 @@ contract ternary {
         // val= statement ? "true": "false";
         return val;
     }
+
+
+
+// How to compare two strings with ternary operator
+// using keccak256 algoritham
+    function Ternarycheck(string memory pass2) public pure returns (string memory)
+    {
+        
+        string memory pass1="jdsfhk";
+        string memory val;
+           val= keccak256(abi.encodePacked(pass1)) == keccak256(abi.encodePacked(pass2)) ? "YOU can use this account ": "YOU have not permission ";
+           return val;
+
+    }
 }
 
 // above code work is same but one use of simple if else other one with Ternary operator
