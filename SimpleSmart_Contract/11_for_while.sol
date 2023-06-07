@@ -12,6 +12,14 @@ contract forwhiles {
             //more code
         }
     }
+
+
+
+
+    function whilelops() public 
+    {
+        
+    }
 }
 
 // All loops works under function not out of the function-- work with function level, not contract level 
