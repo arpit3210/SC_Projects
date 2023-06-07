@@ -21,6 +21,42 @@ contract ternary {
         return val;
     }
 
+bool public TicketBooked;
+
+function BookTicketandUnBookTicket() public {
+    TicketBooked = !TicketBooked;
+}
+
+
+// bool public TicketBooked;
+
+// function BookTicketandUnBookTicket() public 
+// {
+//     if(TicketBooked == false)
+//     {
+// TicketBooked= true;
+//     }
+//     else if (TicketBooked==true)
+//     {
+//         TicketBooked = false;
+//     }
+//     else {
+//         TicketBooked= true;
+//     }
+// }
+
+
+
+function TerbarywithBool(bool _TicketBooked) public view returns(bool)
+{
+    bool val;
+   
+    val= keccak256(abi.encodePacked(TicketBooked ))== keccak256(abi.encodePacked(_TicketBooked)) ? true: false;
+     return val;
+}
+
+
+
 
 
 // How to compare two strings with ternary operator
