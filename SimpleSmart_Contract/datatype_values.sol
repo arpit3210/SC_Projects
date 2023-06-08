@@ -12,8 +12,17 @@ contract dataTypes_values
 
 bool public booltemp= true;
 uint8 public temp= 2;   //uint8, uint16, uint32, uint64
-bytes32 public cool;
+bytes32 public cool= "somethis in hex forment ";
 address public add= msg.sender;
+
+
+
+
+uint[] public subjectscode;
+uint[12] public subjectcode;
+string[] public subjectname=[ "physics", "chemistry", "maths"];
+
+
 
 }
 
