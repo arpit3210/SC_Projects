@@ -22,6 +22,8 @@ contract SolidityTest {
       uint j = _i;
       uint len;
       
+
+      
       while (j != 0) {
          len++;
          j /= 10;
